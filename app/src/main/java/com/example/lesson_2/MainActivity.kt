@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
         btEnvio.setOnClickListener {
             // Action
             val intent = Intent(this, Main2Activity::class.java)
-            intent.putExtra("Email", etEmail.toString())
-            intent.putExtra("Password", etPassword.toString())
+            intent.putExtra("Email", etEmail.text.toString())
+            intent.putExtra("Password", etPassword.text.toString())
             startActivity(intent)
         }
     }
